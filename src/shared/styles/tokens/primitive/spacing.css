@@ -1,0 +1,34 @@
+/*
+ * Primitive Spacing Tokens
+ * 목적: 프로젝트 전반의 여백·패딩·갭 단위를 CSS 변수로 통일합니다.
+ *
+ * 원칙:
+ *   - 숫자 직접 사용 금지 → padding: var(--space-4) ✅ / padding: 16px ❌
+ *   - Tailwind 기본 간격 스케일(1단위=4px)과 1:1 매핑됩니다.
+ *     (p-1=4px, p-2=8px, p-4=16px ... Tailwind 유틸리티를 그대로 사용해도 됩니다)
+ *
+ * 스케일:
+ *   --space-1  (4px)  : 아이콘 내부 간격
+ *   --space-2  (8px)  : 텍스트 간격
+ *   --space-3  (12px) : 버튼 내 padding
+ *   --space-4  (16px) : 카드 내부 여백
+ *   --space-5  (20px) : 인풋 패딩
+ *   --space-6  (24px) : 섹션 내부
+ *   --space-8  (32px) : 카드 간 간격
+ *   --space-10 (40px) : 섹션 상하 패딩
+ *   --space-12 (48px) : 페이지 여백
+ *   --space-16 (64px) : 섹션 간 여백
+ */
+
+:root {
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+}

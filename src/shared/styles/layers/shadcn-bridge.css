@@ -1,0 +1,53 @@
+/*
+ * shadcn 토큰 브리지
+ * 목적: shadcn 컴포넌트가 기대하는 변수 이름을
+ * 우리 프로젝트의 semantic 토큰에 연결합니다.
+ *
+ * 원칙:
+ * - 실제 색상 값은 tokens/primitive/color.css 와 tokens/semantic/color.css 에서 관리한다.
+ * - 이 파일은 토큰을 새로 정의하지 않고 매핑만 담당한다.
+ * - 글로벌 테마가 바뀌어도 shadcn 컴포넌트는 color.css 를 몰라도
+ *   동작하도록 이 브리지 레이어를 유지한다.
+ */
+
+:root {
+  /* 기본 배경색과 기본 글자색 */
+  --background: var(--surface-default);
+  --foreground: var(--fg-primary);
+
+  /* 카드 배경 */
+  --card: var(--surface-default);
+  --card-foreground: var(--fg-primary);
+
+  /* 팝오버, 드롭다운, 다이얼로그 배경 */
+  --popover: var(--surface-default);
+  --popover-foreground: var(--fg-primary);
+
+  /* 주요 액션 */
+  --primary: var(--primary-1);
+  --primary-foreground: var(--fg-inverse);
+
+  /* 보조 액션 */
+  --secondary: var(--surface-muted);
+  --secondary-foreground: var(--fg-primary);
+
+  /* 약한 정보 영역 */
+  --muted: var(--surface-muted);
+  --muted-foreground: var(--fg-secondary);
+
+  /* hover, 선택, 약한 강조 배경 */
+  --accent: var(--primary-5);
+  --accent-foreground: var(--primary-2);
+
+  /* 위험 액션 */
+  --destructive: var(--error);
+  --destructive-foreground: var(--fg-inverse);
+
+  /* 테두리와 입력창, 포커스 링 */
+  --border: var(--border-default);
+  --input: var(--border-default);
+  --ring: var(--border-focus);
+
+  /* 기본 radius */
+  --radius: var(--radius-md);
+}

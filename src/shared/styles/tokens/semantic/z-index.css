@@ -1,0 +1,31 @@
+/*
+ * Semantic Z-Index Tokens
+ * 목적: 레이어 쌓임 순서를 역할 기반 변수로 관리하여 컴포넌트 간 충돌을 방지합니다.
+ *
+ * 원칙: 숫자 직접 사용 금지 → z-index: var(--z-modal) ✅ / z-index: 500 ❌
+ *
+ * 사용 예시:
+ *   z-index: var(--z-modal);   (CSS)
+ *   className="z-modal"        (Tailwind — utilities.css 에서 @utility 로 정의)
+ *
+ * 스케일:
+ *   --z-base     (0)   : 기본 레이어
+ *   --z-raised   (10)  : 카드 hover 시 부상 효과
+ *   --z-dropdown (200) : 드롭다운, 셀렉트
+ *   --z-sticky   (300) : 고정 헤더 / 푸터
+ *   --z-overlay  (400) : 딤 처리 배경
+ *   --z-modal    (500) : 모달, 다이얼로그
+ *   --z-toast    (600) : 토스트 알림
+ *   --z-tooltip  (700) : 툴팁 (최상단)
+ */
+
+:root {
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 200;
+  --z-sticky:   300;
+  --z-overlay:  400;
+  --z-modal:    500;
+  --z-toast:    600;
+  --z-tooltip:  700;
+}

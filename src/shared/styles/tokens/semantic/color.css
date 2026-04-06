@@ -1,0 +1,68 @@
+/*
+ * Semantic Color Tokens
+ * 목적: primitive/color.css 의 원색에 역할(사용처)을 부여합니다.
+ *
+ * 원칙:
+ *   - 값을 직접 쓰지 않고 반드시 primitive 변수를 참조합니다.
+ *   - 컴포넌트에서는 이 파일의 변수를 사용하세요.
+ *     (예: background-color: hsl(var(--surface-default)))
+ *   - 브랜드 색상 변경 시 → primitive/color.css 만 수정
+ *   - 역할 재배치 시         → 이 파일의 var() 매핑만 수정
+ *
+ * 다크 모드 지원 시:
+ *   별도 파일(예: dark.css)에 아래 패턴을 추가하면 됩니다.
+ *   [data-theme="dark"] {
+ *     --surface-default: var(--brown-900);
+ *     --fg-primary: var(--cream-50);
+ *     ...
+ *   }
+ */
+
+:root,
+[data-theme='light'] {
+  /* ── Primary (주 브랜드 색상) ── */
+  --primary-1:       var(--orange-400);  /* 기본 CTA, 선택 상태 */
+  --primary-1-hover: var(--orange-500);  /* CTA hover 상태 */
+  --primary-2:       var(--orange-600);  /* 링크, 강조 텍스트 */
+  --primary-3:       var(--orange-200);  /* 포커스 링, 약한 강조 */
+  --primary-4:       var(--orange-100);  /* 배지, 아이콘 배경 */
+  --primary-5:       var(--orange-50);   /* 칩, 강조 박스 배경 */
+
+  /* ── Secondary (보조 중립 색상) ── */
+  --secondary-1: var(--brown-900);  /* 가장 진한 다크 배경 */
+  --secondary-2: var(--brown-700);  /* 다크 카드 배경 */
+  --secondary-3: var(--brown-600);  /* 섹션 분리 배경 */
+  --secondary-4: var(--brown-400);  /* 비활성 요소, 구분선 */
+  --secondary-5: var(--brown-200);  /* 다크 화면 보조 텍스트 */
+  --secondary-6: var(--brown-50);   /* 밝은 아이보리 배경 */
+
+  /* ── Semantic State (상태 색상) ── */
+  --error:   var(--red-500);
+  --success: var(--green-600);
+  --warning: var(--yellow-500);
+  --info:    var(--blue-500);
+
+  /* ── Surface (배경 레이어) ── */
+  --surface-default: var(--cream-50);   /* 기본 페이지 배경 */
+  --surface-subtle:  var(--cream-100);  /* 약한 구분 배경 */
+  --surface-muted:   var(--cream-200);  /* 뮤트 배경 */
+  --surface-inverse: var(--brown-900);  /* 반전 배경 (다크) */
+
+  /* ── Text (텍스트 색상) ── */
+  --fg-primary:    var(--brown-720);  /* 제목, 본문 */
+  --fg-secondary:  var(--brown-300);  /* 보조 설명 */
+  --fg-disabled:   var(--brown-200);  /* 비활성 텍스트 */
+  --fg-inverse:    var(--cream-50);   /* 진한 배경 위 텍스트 */
+  --fg-link:       var(--orange-700); /* 링크 */
+  --fg-link-hover: var(--orange-500); /* 링크 hover */
+  --fg-error:      var(--red-600);    /* 오류 메시지 */
+
+  /* ── Border (테두리) ── */
+  --border-default: var(--cream-300);   /* 기본 구분선 */
+  --border-strong:  var(--cream-400);   /* 강조 구분선 */
+  --border-focus:   var(--orange-200);  /* 입력창 포커스 링 (= primary-3) */
+}
+
+[data-theme='dark'] {
+  /* 다크 모드 토큰은 추후 확정 예정 */
+}

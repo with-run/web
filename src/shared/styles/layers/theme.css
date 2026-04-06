@@ -1,0 +1,104 @@
+/*
+ * Tailwind Theme 연결
+ * 목적: CSS 변수(토큰)를 Tailwind 유틸리티 클래스로 노출합니다.
+ *
+ * @theme inline 규칙:
+ *   - Tailwind에 이미 있는 카테고리(색상·그림자·모서리)를 우리 토큰 값으로 교체·확장합니다.
+ *   - inline 모드: 별도 CSS 변수를 생성하지 않고 값을 직접 주입합니다.
+ *
+ * 결과:
+ *   --color-primary-5  → bg-primary-5, text-primary-5, border-primary-5 ...
+ *   --shadow-sm        → shadow-sm (Tailwind 기본값 대신 우리 토큰 사용)
+ *   --radius-lg        → rounded-lg (우리 토큰 값 사용)
+ */
+
+@theme inline {
+  /* shadcn 색상 (shadcn 컴포넌트 유틸리티용) */
+  --color-background:         hsl(var(--background));
+  --color-foreground:         hsl(var(--foreground));
+  --color-card:               hsl(var(--card));
+  --color-card-foreground:    hsl(var(--card-foreground));
+  --color-popover:            hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary:            hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary:          hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted:              hsl(var(--muted));
+  --color-muted-foreground:   hsl(var(--muted-foreground));
+  --color-accent:             hsl(var(--accent));
+  --color-accent-foreground:  hsl(var(--accent-foreground));
+  --color-destructive:        hsl(var(--destructive));
+  --color-border:             hsl(var(--border));
+  --color-input:              hsl(var(--input));
+  --color-ring:               hsl(var(--ring));
+
+  /* 디자인 시스템 색상 토큰
+   * bg-primary-5, text-primary-2, border-border-default 등으로 사용 가능
+   */
+  --color-gray-100: hsl(var(--gray-100));
+  --color-gray-90:  hsl(var(--gray-90));
+  --color-gray-80:  hsl(var(--gray-80));
+  --color-gray-70:  hsl(var(--gray-70));
+  --color-gray-60:  hsl(var(--gray-60));
+  --color-gray-50:  hsl(var(--gray-50));
+  --color-gray-40:  hsl(var(--gray-40));
+  --color-gray-30:  hsl(var(--gray-30));
+  --color-gray-20:  hsl(var(--gray-20));
+  --color-gray-15:  hsl(var(--gray-15));
+  --color-gray-10:  hsl(var(--gray-10));
+  --color-gray-5:   hsl(var(--gray-5));
+  --color-white:    hsl(var(--white));
+  --color-black:    hsl(var(--black));
+
+  --color-primary-1:       hsl(var(--primary-1));
+  --color-primary-1-hover: hsl(var(--primary-1-hover));
+  --color-primary-2:       hsl(var(--primary-2));
+  --color-primary-3:       hsl(var(--primary-3));
+  --color-primary-4:       hsl(var(--primary-4));
+  --color-primary-5:       hsl(var(--primary-5));
+
+  --color-secondary-1: hsl(var(--secondary-1));
+  --color-secondary-2: hsl(var(--secondary-2));
+  --color-secondary-3: hsl(var(--secondary-3));
+  --color-secondary-4: hsl(var(--secondary-4));
+  --color-secondary-5: hsl(var(--secondary-5));
+  --color-secondary-6: hsl(var(--secondary-6));
+
+  --color-error:   hsl(var(--error));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-info:    hsl(var(--info));
+
+  --color-surface-default: hsl(var(--surface-default));
+  --color-surface-subtle:  hsl(var(--surface-subtle));
+  --color-surface-muted:   hsl(var(--surface-muted));
+  --color-surface-inverse: hsl(var(--surface-inverse));
+
+  --color-fg-primary:    hsl(var(--fg-primary));
+  --color-fg-secondary:  hsl(var(--fg-secondary));
+  --color-fg-disabled:   hsl(var(--fg-disabled));
+  --color-fg-inverse:    hsl(var(--fg-inverse));
+  --color-fg-link:       hsl(var(--fg-link));
+  --color-fg-link-hover: hsl(var(--fg-link-hover));
+  --color-fg-error:      hsl(var(--fg-error));
+
+  --color-border-default: hsl(var(--border-default));
+  --color-border-strong:  hsl(var(--border-strong));
+  --color-border-focus:   hsl(var(--border-focus));
+
+  --font-sans: 'Pretendard Variable', sans-serif;
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+
+  --radius-sm:   var(--radius-sm);
+  --radius-md:   var(--radius-md);
+  --radius-lg:   var(--radius-lg);
+  --radius-xl:   var(--radius-xl);
+  --radius-2xl:  var(--radius-2xl);
+  --radius-3xl:  var(--radius-3xl);
+  --radius-full: var(--radius-full);
+}

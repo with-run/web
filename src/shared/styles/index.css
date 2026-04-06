@@ -1,0 +1,20 @@
+@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
+@import 'tailwindcss';
+
+/* 원시 토큰 */
+@import './tokens/primitive/color.css';
+@import './tokens/primitive/spacing.css';
+
+/* 시멘틱 토큰 */
+@import './tokens/semantic/color.css';
+@import './tokens/semantic/typography.css';
+@import './tokens/semantic/radius.css';
+@import './tokens/semantic/shadow.css';
+@import './tokens/semantic/z-index.css';
+
+/* Tailwind 커스텀 레이어 */
+@import './layers/theme.css';
+@import './layers/utilities.css';
+@import './layers/base.css';
+/* shadcn 브릿지 스타일 */
+@import './layers/shadcn-bridge.css';

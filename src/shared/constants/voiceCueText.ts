@@ -1,0 +1,31 @@
+import type { VoiceCueKey } from '@bridge';
+
+export const VOICE_CUE_TEXT: Record<VoiceCueKey, string> = {
+  start_01: '좋아, 이제 러닝 시작해보자!',
+  start_02: '출발! 오늘도 무리하지 말고, 호흡 편하게 가자.',
+  direction_left_100m: '100미터 앞에서 왼쪽으로 꺾어줘.',
+  direction_left_70m: '70미터 남았어, 왼쪽 준비해줘.',
+  direction_left_50m: '50미터 전방, 왼쪽으로 이동할게.',
+  direction_left_30m: '30미터 남았어, 왼쪽이야.',
+  direction_left_10m: '10미터 앞이야, 왼쪽으로!',
+  direction_right_100m: '100미터 앞에서 오른쪽으로 꺾어줘.',
+  direction_right_70m: '70미터 남았어, 오른쪽 준비해줘.',
+  direction_right_50m: '50미터 전방, 오른쪽으로 이동할게.',
+  direction_right_30m: '30미터 남았어, 오른쪽이야.',
+  direction_right_10m: '10미터 앞이야, 지금 오른쪽으로!',
+  heart_rate_high_01: '심박수가 조금 높아졌어. 페이스 살짝만 낮춰보자.',
+  heart_rate_high_02: '지금 심박이 높아. 호흡 크게 두 번 하고, 천천히 가자.',
+  heart_rate_very_high_01: '심박수 경고! 잠깐 속도 줄이고 몸 상태 먼저 확인해줘.',
+  heart_rate_very_high_02: '지금은 무리 구간이야. 안전하게 페이스 다운하자.',
+  off_course_01: '코스에서 살짝 벗어났어. 안내선 쪽으로 다시 붙어보자.',
+  off_course_02: '경로 이탈 감지됐어. 방향 맞춰서 천천히 복귀해줘.',
+  stable_back_01: '좋아, 경로에 다시 잘 들어왔어. 지금 페이스 유지하자!',
+  stable_back_02: '안정 구간 복귀 완료. 리듬 좋다, 그대로 가자.',
+  turnaround_01: '곧 반환점이야. 속도 유지하면서 부드럽게 돌아보자.',
+  turnaround_02: '반환점 도착! 코스 따라 반대 방향으로 이어갈게.',
+  destination_01: '도착점이 바로 앞이야. 마무리 호흡 준비하자!',
+  destination_02: '도착점 도착! 오늘 페이스 정말 좋았어.',
+  end_01: '러닝 종료! 수고했어. 가볍게 걸으면서 정리운동하자.',
+  end_02: '오늘 운동 끝! 물 한 잔 하고 천천히 몸 식혀줘.',
+};
+

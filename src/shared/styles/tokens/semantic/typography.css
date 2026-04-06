@@ -1,0 +1,12 @@
+/*
+ * Semantic Typography Tokens
+ * 목적: 폰트 패밀리를 CSS 변수로 관리합니다.
+ *
+ * 타이포그래피 유틸리티 클래스 (h1-b, body-r 등)는
+ * utilities.css 에 @utility 로 정의되어 있습니다.
+ * → Tailwind variant 지원: md:body-l-r, hover:h2-b 등
+ */
+
+:root {
+  --font-family-base: 'Pretendard Variable', sans-serif;
+}

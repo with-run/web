@@ -1,0 +1,29 @@
+/*
+ * Base Layer
+ * 목적: 전역 요소 초기 스타일과 앱 공통 베이스 스타일을 정의합니다.
+ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgb(0 0 0 / 0.2);
+    border-radius: 999px;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family-base);
+    touch-action: pan-x pan-y;
+  }
+}

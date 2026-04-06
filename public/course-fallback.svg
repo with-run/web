@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="176" viewBox="0 0 430 176">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0fe"/>
+      <stop offset="100%" style="stop-color:#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="430" height="176" fill="url(#bg)"/>
+
+  <!-- 지형 등고선 느낌의 곡선들 -->
+  <ellipse cx="215" cy="88" rx="160" ry="64" fill="none" stroke="#bfdbfe" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="215" cy="88" rx="120" ry="48" fill="none" stroke="#bfdbfe" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="215" cy="88" rx="80" ry="32" fill="none" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="215" cy="88" rx="40" ry="16" fill="none" stroke="#bfdbfe" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- 코스 경로 -->
+  <path d="M 80 120 C 100 80, 130 60, 160 70 C 190 80, 200 50, 230 55 C 260 60, 270 90, 300 85 C 330 80, 345 100, 350 120" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+  <!-- 시작점 -->
+  <circle cx="80" cy="120" r="6" fill="#3b82f6" opacity="0.9"/>
+  <circle cx="80" cy="120" r="10" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- 종료점 -->
+  <circle cx="350" cy="120" r="6" fill="#1d4ed8" opacity="0.9"/>
+  <circle cx="350" cy="120" r="10" fill="none" stroke="#1d4ed8" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- 중앙 러닝 아이콘 (사람 실루엣) -->
+  <g transform="translate(195, 62)" opacity="0.25">
+    <!-- 머리 -->
+    <circle cx="20" cy="6" r="5" fill="#1e40af"/>
+    <!-- 몸통 -->
+    <path d="M 20 11 L 18 22" stroke="#1e40af" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 팔 -->
+    <path d="M 18 14 L 12 18" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 18 14 L 25 12" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+    <!-- 다리 -->
+    <path d="M 18 22 L 13 30" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 18 22 L 23 28" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 하단 텍스트 -->
+  <text x="215" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#93c5fd" font-weight="500" letter-spacing="1">코스 이미지 없음</text>
+</svg>

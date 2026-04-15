@@ -16,7 +16,7 @@ export default defineConfig({
   resolve:{
     alias:{
       '@': path.resolve(__dirname, './src'),
-      '@bridge': path.resolve(__dirname, '../mobile/src/bridge/types.ts')
+      '@bridge': path.resolve(__dirname, './src/bridge/types.ts')
     }
   }
   
